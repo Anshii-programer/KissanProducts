@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kissan - Taste the Goodness</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="kissan.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="./images/logoooooo.jpg" alt="Kissan Ketchup Bottle Logo">
+                </div>
+                
+                <nav>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+                
+                <div class="auth-buttons">
+                    <button class="btn btn-login" id="loginBtn">Login</button>
+                    <button class="btn btn-signup" id="signupBtn">Sign Up</button>
+                </div>
+                
+                <button class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Taste the Goodness of Nature</h2>
+                <p>Discover our wide range of delicious jams, ketchups, and spreads made from the freshest fruits and ingredients.</p>
+                <a href="#products" class="btn btn-hero">Explore Products</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="products" id="products">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Products</h2>
+                <p>Made with love and the finest ingredients for your family</p>
+            </div>
+            
+            <div class="product-categories">
+                <button class="category-btn active" data-category="all">All Products</button>
+                <button class="category-btn" data-category="jams">Jams</button>
+                <button class="category-btn" data-category="ketchup">Ketchup</button>
+                <button class="category-btn" data-category="sauces">Sauces</button>
+                <button class="category-btn" data-category="spreads">Spreads</button>
+            </div>
+            
+            <div class="product-grid">
+                <div class="product-card" data-category="jams">
+                    <div class="product-image">
+                        <img src="./images/kissanStw.jpg" alt="Strawberry Jam">
+                    </div>
+                    <div class="product-info">
+                        <h3>Strawberry Jam</h3>
+                        <p>Freshly made with hand-picked strawberries</p>
+                        <div class="product-price">
+                            <span class="price">₹230</span>
+                            <button class="add-to-cart"><i class="fas fa-shopping-cart"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="jams">
+                    <div class="product-image">
+                        <img src="./images/mango.jpg" alt="Mango Jam">
+                    </div>
+                    <div class="product-info">
+                        <h3>Mango Jam</h3>
+                        <p>Rich Alphonso mango flavor</p>
+                        <div class="product-price">
+                            <span class="price">₹200</span>
+                            <button class="add-to-cart"><i class="fas fa-shopping-cart"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="ketchup">
+                    <div class="product-image">
+                        <img src="./images/ketchup.jpg" alt="Tomato Ketchup">
+                    </div>
+                    <div class="product-info">
+                        <h3>Tomato Ketchup (Classic)</h3>
+                        <p>Classic ketchup made from ripe tomatoes</p>
+                        <div class="product-price">
+                            <span class="price">₹100</span>
+                            <button class="add-to-cart"><i class="fas fa-shopping-cart"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="sauces">
+                    <div class="product-image">
+                        <img src="./images/pasta.jpg" alt="Pasta Sauce">
+                    </div>
+                    <div class="product-info">
+                        <h3>Pasta Sauce</h3>
+                        <p>Delicious sauce for all your pasta dishes</p>
+                        <div class="product-price">
+                            <span class="price">₹79</span>
+                            <button class="add-to-cart"><i class="fas fa-shopping-cart"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="spreads">
+                    <div class="product-image">
+                        <img src="./images/choco.jpg" alt="Chocolate Spread">
+                    </div>
+                    <div class="product-info">
+                        <h3>Chocolate Spread</h3>
+                        <p>Delicious spread for your breakfast</p>
+                        <div class="product-price">
+                            <span class="price">₹149</span>
+                            <button class="add-to-cart"><i class="fas fa-shopping-cart"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="jams">
+                    <div class="product-image">
+                        <img src="./images/img8.jpg" alt="Kissan Mixed Fruit Jam">
+                    </div>
+                    <div class="product-info">
+                        <h3>Mixed Fruit Jam</h3>
+                        <p>A blend of fresh, hand-picked fruits</p>
+                        <div class="product-price">
+                            <span class="price">₹199</span>
+                            <button class="add-to-cart">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="ketchup">
+                    <div class="product-image">
+                        <img src="./images/choco2.jpg" alt="Kissan Spicy Ketchup">
+                    </div>
+                    <div class="product-info">
+                        <h3>Spicy Tomato Ketchup</h3>
+                        <p>A spicy kick to the classic tomato flavor</p>
+                        <div class="product-price">
+                            <span class="price">₹120</span>
+                            <button class="add-to-cart">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="spreads">
+                    <div class="product-image">
+                        <img src="./images/img2.jpg" alt="Kissan Chocolate Hazelnut Spread">
+                    </div>
+                    <div class="product-info">
+                        <h3>Chocolate Hazelnut Spread</h3>
+                        <p>Rich and nutty spread for a treat</p>
+                        <div class="product-price">
+                            <span class="price">₹249</span>
+                            <button class="add-to-cart">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <section class="slider-section">
+        <div class="slider-container">
+            <div class="slider">
+                <div class="slide">
+                    <video autoplay muted loop playsinline>
+                        <source src="./videos/WhatsApp Video 2025-09-29 at 12.03.58_f239b09b.mp4" type="video/mp4">
+                        Your browser does not support video.
+                    </video>
+                    <div class="slide-content">
+                        <h3>New Arrival</h3>
+                        <p>Fresh taste from our new products</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="./images/kissanStw.jpg" alt="Strawberry Jam Offer">
+                    <div class="slide-content">
+                        <h3>Strawberry Jam Offer</h3>
+                        <p>Get 20% off on our best-selling Strawberry Jam</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="./images/img7.jpg" alt="Ketchup Promo">
+                    <div class="slide-content">
+                        <h3>Ketchup Promotion</h3>
+                        <p>Perfect for your family meals</p>
+                    </div>
+                </div>
+            </div>
+            <button class="slider-arrow prev"><i class="fas fa-chevron-left"></i></button>
+            <button class="slider-arrow next"><i class="fas fa-chevron-right"></i></button>
+            <div class="slider-controls"></div>
+        </div>
+    </section>
+    
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>About Kissan</h3>
+                    <p>Since 1935, Kissan has been bringing the goodness of fruits to your home with our range of jams, ketchups, and spreads.</p>
+                    <div class="social-icons">
+                        <a href="https://github.com/legendytgamimg46" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/watch?v=jGGNHu_Y4OI" target="_blank"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Products</h3>
+                    <ul>
+                        <li><a href="#products">Jams</a></li>
+                        <li><a href="#products">Ketchups</a></li>
+                        <li><a href="#products">Sauces</a></li>
+                        <li><a href="#products">Spreads</a></li>
+                        <li><a href="#products">New Products</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Recipes</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">FAQs</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Fruit Avenue, Food City</li>
+                        <li><i class="fas fa-envelope"></i> info@kissan.com</li>
+                        <li><i class="fas fa-headset"></i> customercare@kissan.com</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2023 Kissan. All Rights Reserved. | <a href="https://github.com/legendytgamimg46" target="_blank" style="color: white; text-decoration: underline;">GitHub</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal" id="loginModal">
+        <div class="modal-content">
+            <button class="close-modal" id="loginClose">&times;</button>
+            <h2 class="modal-title">Login</h2>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="loginEmail">Email</label>
+                    <input type="email" id="loginEmail" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="loginPassword">Password</label>
+                    <input type="password" id="loginPassword" placeholder="Enter your password" required>
+                </div>
+                <div class="form-options">
+                    <label class="remember-me">
+                        <input type="checkbox"> Remember me
+                    </label>
+                    <a href="#" class="forgot-password">Forgot Password?</a>
+                </div>
+                <button type="submit" class="modal-btn" id="loginSubmit">Login</button>
+            </form>
+            <div class="modal-footer">
+                Don't have an account? <a href="#" id="switchToSignup">Sign Up</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="signupModal">
+        <div class="modal-content">
+            <button class="close-modal" id="signupClose">&times;</button>
+            <h2 class="modal-title">Sign Up</h2>
+            <form id="signupForm">
+                <div class="form-group">
+                    <label for="signupName">Full Name</label>
+                    <input type="text" id="signupName" placeholder="Enter your full name" required>
+                </div>
+                <div class="form-group">
+                    <label for="signupEmail">Email</label>
+                    <input type="email" id="signupEmail" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="signupPassword">Password</label>
+                    <input type="password" id="signupPassword" placeholder="Create a password" required>
+                </div>
+                <button type="submit" class="modal-btn" id="signupSubmit">Sign Up</button>
+            </form>
+            <div class="modal-footer">
+                Already have an account? <a href="#" id="switchToLogin">Login</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="kissan.js"></script>
+</body>
+</html>
